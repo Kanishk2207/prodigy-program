@@ -21,8 +21,8 @@ Please Note that the structure of the project is POC level. If given more time a
 
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
-   cd <repository-directory>
+   git clone https://github.com/Kanishk2207/prodigy-program.git
+   cd prodigy-program
    ```
 
 2. Place the required CSV files in the `resources` directory:
