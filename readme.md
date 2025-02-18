@@ -35,19 +35,22 @@ Please Note that the structure of the project is POC level. If given more time a
    DAILY_SCHEDULE_CSV=daily_schedule.csv
    ```
 
-4. Build and start the Docker container:
+4. Build the Docker container:
    ```bash
    ./entrypoint.sh build Dockerfile
+   ```
+   
+5. Start the Docker container:
+   ```bash
    ./entrypoint.sh start
    ```
 
-5. Access the container and start the application:
+6. Access the container and start the application:
    ```bash
-   docker exec -it <container-name> /bin/bash
    python3 main.py
    ```
 
-6. The application will be hosted at `http://localhost:9002`.
+7. The application will be hosted at `http://localhost:9002`.
 
 ## Database Schema
 
