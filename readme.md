@@ -25,14 +25,17 @@ Please Note that the structure of the project is POC level. If given more time a
    cd prodigy-program
    ```
 
-2. Place the required CSV files in the `resources` directory:
+2. Place the required CSV files in the `resources` directory if not present:
    - `weekly_plan.csv`
    - `daily_schedule.csv`
 
-3. Update the `.env` file with the filenames:
+3. Update the `.env` file with the filenames if not there:
    ```env
-   WEEKLY_PLAN_CSV=weekly_plan.csv
-   DAILY_SCHEDULE_CSV=daily_schedule.csv
+   DB_URL=sqlite+aiosqlite:///./database/database
+   MIGRATION_SCRIPT_PATH=/app/database/migration/migration.sql
+   WEEKLY_PLAN_CSV_FILE_NAME=weekly_plan.csv
+   DAILY_SCHEDULE_CSV_FILE_NAME=daily_schedule.csv
+   DEFAULT_RESOURCE_PATH=resources
    ```
 
 4. Build the Docker container:
