@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+sqlalchemy
+alembic
+pandas
+aiosqlite
+python-dotenv
+pydantic_settings
+greenlet
