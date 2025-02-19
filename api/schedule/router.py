@@ -14,7 +14,7 @@ async def fetch_daily_schedule_rules(day: int):
 
     return {"data": schedule}
 
-@router.get("/complete")
+@router.post("/complete")
 async def mark_complete_activity(request: MarkCompleted):
     """Endpoint mark activity completed"""
 
