@@ -80,6 +80,7 @@ The following tables are automatically created:
 
 ### 1. `GET /schedule/all?day=Intiger`
 Retrieve all activities for the day.
+Eg: day = 15, day=16
 - **Response:**
   ```json
   [
@@ -96,9 +97,14 @@ Retrieve all activities for the day.
 
 
 
-### 2. `GET /schedule/complete`
+### 2. `POST /schedule/complete`
 Mark an activity completed
-- **Request:** `GET /schedule/14`
+- **Request body:** 
+```json
+   {
+    "schedule_id": "71b41fd8-7186-4f15-b838-ba65bfcffca0"(enter schedule it from get request)
+}
+```
 - **Response:**
   ```json
     "data": {
